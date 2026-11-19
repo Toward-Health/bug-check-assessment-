@@ -1,0 +1,16 @@
+[project]
+name = "groundbot"
+version = "0.1.0"
+description = "Practice exercise: a made-up clinic front-desk bot that answers by cosine similarity."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["groundbot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
